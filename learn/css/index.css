@@ -1,0 +1,152 @@
+html,
+body,
+div,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.panel {
+  background: #1e1e1e;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.box1 {
+  width: 500px;
+  height: 30px;
+  margin: auto;
+  /* background: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%; */
+  background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+  background-size: 40px 40px;
+  box-shadow: inset 0 0 3px #555;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.bg-grid {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(rgba(255, 255, 255, 1) 2px, transparent 0), linear-gradient(to right, rgba(255, 255, 255, 1) 2px, transparent 0), linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 0), linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 0);
+  background-position: -50px -50px;
+  background-size: 100px 100px, 100px 100px, 100% 10px, 10px 100%;
+}
+.animate-grid {
+  animation: move-grid 6s linear infinite;
+}
+@keyframes move-grid {
+  0% {
+    background-position: -50px -50px;
+  }
+  30% {
+    background-position: -100px -100px;
+  }
+  60% {
+    background-position: -100px -150px;
+  }
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+.bg-dot {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-image: radial-gradient(circle, #0cf 15px, transparent), radial-gradient(circle, red 15px, transparent), radial-gradient(circle, yellow 15px, transparent), radial-gradient(circle, green 15px, transparent);
+  background-repeat: no-repeat;
+  background-position: 0 0, 50px 0, 100px 0, 150px 0, 200px 0;
+  background-size: 50px 50px;
+}
+.animate-dot {
+  animation: move-dot 8s linear infinite;
+}
+.animate-dot2 {
+  animation: move-dot2 6s linear infinite;
+}
+@keyframes move-dot {
+  0% {
+    background-position: 0 0, 50px 0, 100px 0, 150px 0;
+  }
+  30% {
+    background-position: 50px 0, 0 0, 100px 0, 150px 0;
+  }
+  60% {
+    background-position: 50px 0, 100px 0, 0 0, 150px 0;
+  }
+  100% {
+    background-position: 50px 0, 100px 0, 150px 0, 0 0;
+  }
+}
+@keyframes move-dot2 {
+  0% {
+    background-image: radial-gradient(circle, #0cf 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent);
+  }
+  30% {
+    background-image: radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, red 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent);
+  }
+  60% {
+    background-image: radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, yellow 15px, transparent), radial-gradient(circle, gray 15px, transparent);
+  }
+  100% {
+    background-image: radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, gray 15px, transparent), radial-gradient(circle, green 15px, transparent);
+  }
+}
+
+.bg-qi {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 0, transparent 75%, rgba(0, 0, 0, 0.25) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 0, transparent 75%, rgba(0, 0, 0, 0.25) 0);
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.fold {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 80px;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.5) 0) no-repeat 100% 0 / 2em 2em, linear-gradient(-135deg, transparent 1.4em, #06c 0);
+}
+.linear {
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.5)) no-repeat 100% 0 / 2em 2em, linear-gradient(-135deg, transparent 1.4em, #06c);
+}
+
+.fold-1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  position: relative;
+  width: 200px;
+  height: 80px;
+  border-radius: 0.5em;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  background: linear-gradient(-150deg, transparent 1.5em, #58a 0);
+}
+.fold-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.4)) 100% 0 no-repeat;
+  width: 1.73em;
+  height: 3em;
+  transform: translateY(-1.3em) rotate(-30deg);
+  transform-origin: bottom right;
+  border-bottom-left-radius: inherit;
+  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.15);
+}

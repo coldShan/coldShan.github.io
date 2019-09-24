@@ -1,0 +1,35 @@
+/*
+ * @Author: xrf
+ * @Date: 2019-09-24 15:13:24
+ * @LastEditors: xrf
+ * @LastEditTime: 2019-09-24 15:46:05
+ */
+@charset "utf-8";
+@font-face {
+  font-family: "TChinese";
+  src: url("../font/chinese.font.eot");
+  src: url("../font/chinese.font.eot?#iefix") format("embedded-opentype"), url("../font/chinese.font.woff") format("woff"), url("../font/chinese.font.ttf") format("truetype"), url("../font/chinese.font.svg#font/chinese.font") format("svg");
+  src: url(../font/chinese.font.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+html,
+body,
+div,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-image: url(../img/dot_bg.png);
+  background-color: #9d2933;
+}
+.c-font {
+  font-family: TChinese, SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi, "Microsoft YaHei";
+}
